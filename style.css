@@ -1,0 +1,42 @@
+.status p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.status {
+  margin: 2rem 0;
+}
+
+#stitch-done {
+  font-size: 2rem;
+}
+
+.actions>* {
+  display: block;
+}
+
+.danger-button {
+  border-color: #c70505;
+  background-color: #c70505;
+}
+
+.danger-button:hover,
+.danger-button:active {
+  border-color: #a60505;
+  background-color: #a60505;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #385f0f88;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Crochet Stitch Tracker</title>
+  <link rel="stylesheet" href="primative.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="small-container">
+    <h1>Simple Crochet Stitch Tracker</h1>
+
+    <section class="status">
+      <p id="status-stitches">Stitch</p>
+      <p id="status-steps">Step</p>
+      <p id="status-lines">Row</p>
+    </section>
+
+    <section class="actions">
+      <button id="stitch-done">Stitch Done</button>
+      <button id="stitch-undo" class="muted-button">Undo Stitch</button>
+      <button id="reset" class="danger-button">Reset</button>
+    </section>
+
+
+    <fieldset>
+      <legend>Config</legend>
+
+      <label for="count-stitches">Stitches per step</label>
+      <input type="number" id="count-stitches">
+
+      <label for="count-steps">Steps per row</label>
+      <input type="number" id="count-steps">
+
+      <label for="count-lines">Rows</label>
+      <input type="number" id="count-lines">
+    </fieldset>
+  </main>
+
+  <div id="done-modal" class="modal hide">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="-2 -2 28 28">
+        <circle fill="black" cx="12" cy="12" r="13.5"></circle>
+        <path fill="#5ea90e"
+          d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 17l-5-5.299 1.399-1.43 3.574 3.736 6.572-7.007 1.455 1.403-8 8.597z" />
+      </svg>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+
+</html>
